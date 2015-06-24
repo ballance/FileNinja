@@ -83,7 +83,7 @@ namespace slicer
 
         public void Reassemble()
         {
-            using (var writeStream = new FileStream(@"..\..\..\files\reassembled_" + Guid.NewGuid() + ".txt", FileMode.CreateNew, FileAccess.Write))
+            using (var writeStream = new FileStream(@"..\..\..\files\reassembled_" + Guid.NewGuid() + ".enk", FileMode.CreateNew, FileAccess.Write))
             {
                 foreach (var chunk in _chunkList)
                 {
