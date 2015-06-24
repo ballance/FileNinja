@@ -40,7 +40,7 @@ namespace slicer
                     Directory.CreateDirectory(chunkDirectory);
                 }
 
-                var chunkFilePath = String.Format("{0}{1}-{2}-{3}.enc", chunkDirectory, batchCode, i);
+                var chunkFilePath = String.Format("{0}{1}-{2}.ink", chunkDirectory, batchCode, i);
 
                 var readBufferLength = Convert.ToInt32(chunkSize);
 
